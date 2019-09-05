@@ -12,7 +12,7 @@ RUN apt-get install -y nginx nodejs
 # Remove the default Nginx configuration file
 RUN rm -v /etc/nginx/nginx.conf
 
-RUN mkdir -p web 
+RUN mkdir web 
 WORKDIR web 
 
 # Copy a configuration file from the current directory
