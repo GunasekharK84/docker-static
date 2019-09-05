@@ -15,6 +15,9 @@ RUN rm -v /etc/nginx/nginx.conf
 # Copy a configuration file from the current directory
 ADD nginx.conf /etc/nginx/
 
+RUN mkdir -p web
+WORKDIR web
+
 ADD web /usr/share/nginx/html/
 ADD web /var/www/html/
 
